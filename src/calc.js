@@ -1,6 +1,7 @@
 var calc = {
 	add: function(text) {
-		return 0;
+		result = text ? text : 0;
+		return parseInt(result)
 	}
 }
 
