@@ -4,24 +4,18 @@
     "description": "BDD Kata",
     "main": "calc.js",
     "homepage": "https://github.com/mhevery/jasmine-node",
-  "repository": {
+    "repository": {
     "type": "git",
     "url": "https://github.com/mhevery/jasmine-node.git"
-  },
-  "keywords": [
-    "testing",
-    "bdd"
-  ],
-  "author": "Misko Hevery <misko@hevery.com>",
-
-  "licenses": [
-    "MIT"
-  ],
-  "dependencies": {
-    "jasmine-reporters": "~1.0.0",
-  },
-  "scripts": {
-    "test": "spec/calc-spec.js spec"
-  },
-  "devDependencies": {}
+},
+    "keywords": [
+        "testing",
+        "bdd"
+    ],
+    "dependencies": {
+        "jasmine-reporters": "~1.0.0",
+    },
+    "scripts": {
+        "test": "spec/calc-spec.js"
+    }
 }
