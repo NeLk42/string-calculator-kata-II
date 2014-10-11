@@ -1,3 +1,10 @@
-"scripts": {
-    "test": "jasmine-node specs/*spec.js"
+{
+    "name" : "BDD-Jasmine-NodeJS",
+    "version" : "1.0.0",
+    "devDependencies" : {
+        "jasmine-node" : "latest"
+    },
+    "scripts" : {
+        "test" : "jasmine-node specs/calc-spec.js"
+    }
 }
