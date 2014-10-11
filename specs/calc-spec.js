@@ -1,4 +1,4 @@
-var calc = require('../calc')
+var calc = require('../src/calc')
 
 describe('String calculator', function() {
 	it('should return zero if there is no input', function(){
