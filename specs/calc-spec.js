@@ -12,4 +12,8 @@ describe('String calculator', function() {
 	it('should return n if the text is a number n', function(){
 		expect(calc.add('42')).toBe(42);
 	});
+
+	it('should return sum(a,b) if the text is "a,b" ', function(){
+		expect(calc.add('42,21')).toBe(63);
+	});
 });
