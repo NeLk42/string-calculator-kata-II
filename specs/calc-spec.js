@@ -25,6 +25,7 @@ describe('String calculator add() method', function() {
 		expect(calc.add('63,42\n21')).toBe(105);
 	});
 
+    it('should return 105 if the text is \/\/;\\n63;42;21 ', function(){
+        expect(calc.add('//;\n63;42;21')).toBe(105);
+    });
 });
-
-

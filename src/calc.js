@@ -1,6 +1,6 @@
 var calc = {
     add: function(text) {
-        result = text ? text : 0;
+        var result = text ? text : 0;
         if (result != 0){
             var numbers = this.getNumbers(text)
             result = this.getSum(numbers)
