@@ -19,11 +19,22 @@ var calc = {
         return res
     },
     getSum: function(array){
-        var res = 0
+        var res = 0,
+            negative = false,
+            negativeValues = 'Negatives not allowed :'
         for(var i=0; i<array.length; i++){
-            res += parseInt(array[i])
+            if(array[i] >= 0){
+                res += parseInt(array[i])
+            } else {
+                negative = true
+                negativeValues += ' ' + array[i]
+            }
         }
-        return res
+        if (negative){
+            return negativeValues
+        } else{
+            return res
+        }
     }
 }
 

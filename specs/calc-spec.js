@@ -28,4 +28,8 @@ describe('String calculator add() method', function() {
     it('should return 105 if the text is \/\/;\\n63;42;21 ', function(){
         expect(calc.add('//;\n63;42;21')).toBe(126);
     });
+
+    it('should raise exception if receives negative values', function(){
+        expect(calc.add('1,-2')).toBe('Negatives not allowed : -2');
+    });
 });
